@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class Main {
+public class desafio {
 	public static void main(String[] args) {
 		int wins   = 0;
 		int losses = 0;
