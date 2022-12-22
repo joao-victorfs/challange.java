@@ -2,7 +2,7 @@ import java.util.Random;
 
 public class Main {
 	public static void main(String[] args) {
-		int wins = 0;
+		int wins   = 0;
 		int losses = 0;
 		Random r = new Random();
 		
@@ -12,7 +12,7 @@ public class Main {
 		    else 
 		       losses++;}
 		    
-		int wins2 = 0;
+	int wins2  = 0;
         int losses2 = 0;
         
         for(int b = 0; b < 1000000; b++) {
