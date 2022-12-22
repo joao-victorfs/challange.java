@@ -12,7 +12,7 @@ public class desafio {
 		    else 
 		       losses++;}
 		    
-		int wins2 = 0;
+        int wins2 = 0;
         int losses2 = 0;
         
         for(int b = 0; b < 1000000; b++) {
