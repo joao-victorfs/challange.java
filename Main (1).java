@@ -6,7 +6,7 @@ public class Main {
 		int losses = 0;
 		Random r = new Random();
 		
-		for(int a = 0; a<1000000; a++) {
+		for(int a = 0; a < 1000000; a++) {
 		    if(r.nextInt(6) + 1 == 6) 
 		       wins++; 
 		    else 
@@ -28,7 +28,7 @@ public class Main {
       double mean,var,sd;
       mean = (wins + wins2)/2;
       
-      var = (mean - wins)*(mean-wins)+(mean-wins2)*(mean-wins2)/2;
+      var = (mean - wins)*(mean - wins)+(mean - wins2)*(mean - wins2)/2;
       
       sd = Math.sqrt(var);
       
