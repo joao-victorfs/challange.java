@@ -28,7 +28,7 @@ public class desafio {
       double mean,var,sd;
       mean = (wins + wins2)/2;
       
-      var = (mean - wins)*(mean - wins)+(mean - wins2)*(mean - wins2)/2;
+      var = Math.pow(mean - wins,2);
       
       sd = Math.sqrt(var);
       
