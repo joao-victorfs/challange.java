@@ -1,42 +1,42 @@
 import java.util.Random;
 
-public class desafio {
-	public static void main(String[] args) {
-		int wins = 0;
-		int losses = 0;
-		Random r = new Random();
-		
-		for(int a = 0; a<1000000; a++) {
-		    if(r.nextInt(6) + 1 == 6) 
-		       wins++; 
-		    else 
-		       losses++;}
-		    
+public class dice {
+    public static void main(String[] args) {
+        int wins = 0;
         int wins2 = 0;
-        int losses2 = 0;
-        
-        for(int b = 0; b < 1000000; b++) {
-            int numOfSix = 0;
-        for(int c = 0; c < 2; c++)
-            if(r.nextInt(6) + 1 == 6)
-            numOfSix++;
-            if (numOfSix > 1)
-               wins2++;
-            else
-               losses2++;}
- 
-      double mean,sd,var = 0;
+        Random r = new Random();
 
-      mean = (wins + wins2)/2;
-      
-      var = Math.pow(mean - wins, 2) + Math.pow(mean - wins2,2)/2;
-      
-      sd = Math.sqrt(var);
-      
-    System.out.println("Wins in game 1: "+ wins+", Losses in game 1: "+ losses);
-    System.out.println("Wins in game 2: "+ wins2+", Losses in game 2: "+ losses2);
-    System.out.println("The Mean is: "+ mean);
-    System.out.println("The Variance is: "+ var);
-    System.out.println("The Standart Deviation is: "+ sd);
-    }  
+        for (int a = 0; a < 1000000; a++) {
+            for (int b = 0; b < 4; b++) {
+                if (r.nextInt(6) + 1 == 6) {
+                    wins++;
+                    break;
+                }
+            }
+        }
+
+        for (int c = 0; c < 1000000; c++) {
+            for (int d = 0; d < 24; d++) {
+                if (r.nextInt(6) + 1 == 6 && r.nextInt(6) + 1 == 0) {
+                    wins2++;
+                    break;
+                }
+            }
+        }
+
+        double mean, sd, var = 0;
+
+        mean = (wins + wins2) / 2;
+
+        var = Math.pow(mean - wins, 2) + Math.pow(mean - wins2, 2) / 2;
+
+        sd = Math.sqrt(var);
+
+        System.out.println("Wins in game 1: " + wins);
+        System.out.println("Wins in game 2: " + wins2);
+        System.out.println("The Mean is: " + mean);
+        System.out.println("The Variance is: " + var);
+        System.out.println("The Standart Deviation is: " + sd);
+    }
+
 }
