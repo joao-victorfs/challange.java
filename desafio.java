@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class dice {
+public class desafio {
     public static void main(String[] args) {
         int wins = 0;
         int wins2 = 0;
