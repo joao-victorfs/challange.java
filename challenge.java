@@ -23,11 +23,11 @@ public class challenge {
 
         double mean1, mean2, sd1, sd2, var1, var2 = 0;
 
-        mean1 = (double)wins/(double)1000000;
-        mean2 = (double)wins2/(double)1000000;
+        mean1 = (double) wins / (double) 1000000;
+        mean2 = (double) wins2 / (double) 1000000;
 
-        var1 = Math.pow(wins - mean1, 2)/ 1000000 - 1;
-        var2 = Math.pow(wins2 - mean2, 2)/ 1000000 - 1;
+        var1 = Math.pow(wins - mean1, 2) / 1000000 - 1;
+        var2 = Math.pow(wins2 - mean2, 2) / 1000000 - 1;
 
         sd1 = Math.sqrt(var1);
         sd2 = Math.sqrt(var2);
